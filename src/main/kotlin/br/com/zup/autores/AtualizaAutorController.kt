@@ -10,6 +10,7 @@ import javax.transaction.Transactional
 class AtualizaAutorController(val autorRepository: AutorRepository) {
 
     @Put
+    @Transactional
     fun atualiza(@PathVariable id: Long, descricao: String): HttpResponse<Any> {
         // buscar o objeto no banco e verificar se achou ou não (isEmpty?)
         val possivelAutor = autorRepository.findById(id)

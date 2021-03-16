@@ -9,6 +9,7 @@ public class CadastraAutorController {
     @org.jetbrains.annotations.NotNull
     private final br.com.zup.autores.AutorRepository autorRepository = null;
     
+    @javax.transaction.Transactional
     @io.micronaut.http.annotation.Post
     public void cadastra(@org.jetbrains.annotations.NotNull
     @javax.validation.Valid

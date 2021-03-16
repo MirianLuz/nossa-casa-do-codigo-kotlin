@@ -9,6 +9,7 @@ public class AtualizaAutorController {
     private final br.com.zup.autores.AutorRepository autorRepository = null;
     
     @org.jetbrains.annotations.NotNull
+    @javax.transaction.Transactional
     @io.micronaut.http.annotation.Put
     public io.micronaut.http.HttpResponse<java.lang.Object> atualiza(@io.micronaut.http.annotation.PathVariable
     long id, @org.jetbrains.annotations.NotNull

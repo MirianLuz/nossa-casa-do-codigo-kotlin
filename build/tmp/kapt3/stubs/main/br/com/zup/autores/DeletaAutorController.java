@@ -9,6 +9,7 @@ public class DeletaAutorController {
     private final br.com.zup.autores.AutorRepository autorRepository = null;
     
     @org.jetbrains.annotations.NotNull
+    @javax.transaction.Transactional
     @io.micronaut.http.annotation.Delete
     public io.micronaut.http.HttpResponse<java.lang.Object> deleta(@io.micronaut.http.annotation.PathVariable
     long id) {
